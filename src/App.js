@@ -22,33 +22,36 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <img src="../assets/logo-sv.png" alt="Sobre votar logo"/>
+          <img src="../assets/logo-sv.png" alt="Sobre votar logo" />
         </header>
-        <h1>Sobre Votar AI</h1>
-        <p>
-          Descubra todas as informações sobre a votação nas eleições de Portugal
-          em 2024, com a nossa Inteligência Artificial.
-        </p>
 
-        <div class="input-search">
-          <label for="user-question">Digite sua pergunta</label>
-          <input
-            id="user-question"
-            type="text"
-            placeholder="Digite sua pergunta"
-            value={userInput}
-            onChange={handleInputChange} // Add evento de escuta para capturar a mudança no input
-          />
-          <button onClick={handleSubmit}>Enviar</button>
-        </div>
+        <main>
+          <h1>Sobre Votar.AI</h1>
+          <p>
+            Descubra todas as informações sobre a votação nas eleições de
+            Portugal em 2024, com a nossa Inteligência Artificial.
+          </p>
 
-        <div className="ai-logos">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
+          <div class="input-search">
+            <label for="user-question">Como posso ajudar?</label>
+            <input
+              id="user-question"
+              type="text"
+              placeholder="Digite sua pergunta..."
+              value={userInput}
+              onChange={handleInputChange} // Add evento de escuta para capturar a mudança no input
+            />
+            <button onClick={handleSubmit}>Perguntar</button>
+          </div>
+
+          <div className="ai-logos">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </main>
 
         <footer>
           <p>Sobre Votar © 2024. All Rights Reserved.</p>
