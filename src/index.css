@@ -32,7 +32,7 @@ header {
   text-align: center;
 
   img {
-    max-width: 24rem;
+    max-width: 32rem;
     height: auto;
   }
 }
@@ -46,10 +46,6 @@ main {
   text-align: center;
   font-size: 2rem;
   line-height: 2.8rem;
-
-  h1 {
-    font-size: 2.4rem;
-  }
 
   .input-search {
     display: flex;
@@ -86,7 +82,7 @@ main {
   }
 
   button:hover {
-    background: #295701;
+    background: #437b11;
   }
 }
 
@@ -115,4 +111,24 @@ footer {
   color: white;
   font-size: 1.2rem;
   padding: 1rem;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 1024px) {
+  body {
+    background-image: url(./assets/bg-desktop-v1.jpg);
+  }
+
+  .App {
+    padding: 0 20rem;
+  }
+
+  main {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+
+    input {
+     font-size: 1.6rem;
+    }
+  }
 }
