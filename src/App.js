@@ -45,11 +45,11 @@ function App() {
           </div>
 
           <div className="ai-logos">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="../assets/openai-1.jpg" alt="" />
+            <img src="../assets/openai-2.jpg" alt="" />
+            <img src="../assets/openai-3.jpg" alt="" />
+            <img src="../assets/gemini.jpg" alt="" />
+            <img src="../assets/flowiseai.jpg" alt="" />
           </div>
         </main>
 
