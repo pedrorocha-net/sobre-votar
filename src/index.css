@@ -14,7 +14,7 @@ body {
 /* BODY */
 body {
   font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   background-image: url(./assets/bg-mobile-v1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
