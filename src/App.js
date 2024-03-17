@@ -37,8 +37,8 @@ function App() {
             Portugal em 2024, com a nossa Inteligência Artificial.
           </p>
 
-          <div class="input-search">
-            <label for="user-question">Como posso ajudar?</label>
+          <div className="input-search">
+            <label htmlFor="user-question">Como posso ajudar?</label>
             <input
               id="user-question"
               type="text"
