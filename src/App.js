@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import query from "./api/query.js";
-import logo from "./assets/sobre-votarai-logo.png"
-import openai1 from "./assets/openai-1.jpg"
-import openai2 from "./assets/openai-2.jpg"
-import openai3 from "./assets/openai-3.jpg"
-import gemini from "./assets/gemini.jpg"
-import flowiseai from "./assets/flowiseai.jpg"
+import logo from "./assets/sobre-votarai-logo.png";
+import openai1 from "./assets/openai-1.jpg";
+import openai2 from "./assets/openai-2.jpg";
+import openai3 from "./assets/openai-3.jpg";
+import gemini from "./assets/gemini.jpg";
+import flowiseai from "./assets/flowiseai.jpg";
 
 function App() {
   const [userInput, setUserInput] = useState(""); // Estado p/ armazenar o valor do input
@@ -32,9 +32,8 @@ function App() {
         </header>
 
         <main>
-          <h1>Sobre Votar.AI</h1>
           <p>
-            Descubra todas as informações sobre a votação nas eleições de
+            Descubra todas as informações sobre as eleições de
             Portugal em 2024, com a nossa Inteligência Artificial.
           </p>
 
