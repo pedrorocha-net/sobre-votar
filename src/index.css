@@ -9,11 +9,18 @@ body {
 
 :root {
   font-size: 62.5%;
+  padding: 2.4rem;
 }
-
+/* BODY */
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   background-image: url(../assets/bg-mobile-v1.jpg);
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 5rem 0;
 }
 
