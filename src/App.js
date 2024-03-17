@@ -60,8 +60,7 @@ function App() {
         </main>
 
         <footer>
-          <p>Sobre Votar © 2024. All Rights Reserved.</p>
-          <img src="" alt="" />
+          <p>Sobre Votar.AI © 2024. Todos os direitos reservados.</p>
         </footer>
       </div>
     </>
