@@ -21,7 +21,9 @@ function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header"></header>
+        <header className="App-header">
+          <img src="../assets/logo-sv.png" alt="Sobre votar logo"/>
+        </header>
         <h1>Sobre Votar AI</h1>
         <p>
           Descubra todas as informações sobre a votação nas eleições de Portugal
