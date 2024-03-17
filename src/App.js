@@ -34,7 +34,7 @@ function App() {
             value={userInput}
             onChange={handleInputChange} // Add evento de escuta para capturar a mudança no input
           />
-          <button onClick={handleSubmit}>Enviar</button>
+          <button onClick={handleSubmit}>Perguntar</button>
         </div>
       </div>
     </>
