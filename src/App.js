@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import query from "./api/query.js";
-import logo from "./assets/logo-sv.png"
+import logo from "./assets/sobre-votarai-logo.png"
 import openai1 from "./assets/openai-1.jpg"
 import openai2 from "./assets/openai-2.jpg"
 import openai3 from "./assets/openai-3.jpg"
