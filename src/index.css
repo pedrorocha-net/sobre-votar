@@ -15,7 +15,7 @@ body {
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
-  background-image: url(../assets/bg-mobile-v1.jpg);
+  background-image: url(./assets/bg-mobile-v1.jpg);
 }
 
 /* HEADER */
@@ -62,5 +62,19 @@ main {
 
     border: solid 1px gray;
     border-radius: 1rem;
+  }
+}
+
+/* AI LOGOS*/
+.ai-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+  img {
+    width: 9.2rem;
+    height: 3.2rem;
+    border-radius: 0.6rem;
   }
 }

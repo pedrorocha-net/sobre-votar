@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import query from "./api/query.js";
+import logo from "./assets/logo-sv.png"
+import openai1 from "./assets/openai-1.jpg"
+import openai2 from "./assets/openai-2.jpg"
+import openai3 from "./assets/openai-3.jpg"
+import gemini from "./assets/gemini.jpg"
+import flowiseai from "./assets/flowiseai.jpg"
 
 function App() {
   const [userInput, setUserInput] = useState(""); // Estado p/ armazenar o valor do input
@@ -22,7 +28,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <img src="../assets/logo-sv.png" alt="Sobre votar logo" />
+          <img src={logo} alt="Sobre votar logo" />
         </header>
 
         <main>
@@ -45,11 +51,11 @@ function App() {
           </div>
 
           <div className="ai-logos">
-            <img src="../assets/openai-1.jpg" alt="" />
-            <img src="../assets/openai-2.jpg" alt="" />
-            <img src="../assets/openai-3.jpg" alt="" />
-            <img src="../assets/gemini.jpg" alt="" />
-            <img src="../assets/flowiseai.jpg" alt="" />
+            <img src={openai1} alt="" />
+            <img src={openai2} alt="" />
+            <img src={openai3} alt="" />
+            <img src={gemini} alt="" />
+            <img src={flowiseai} alt="" />
           </div>
         </main>
 
