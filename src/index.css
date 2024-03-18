@@ -24,7 +24,8 @@ body {
 .App {
   display: grid;
   place-content: center;
-  padding: 2.4rem;
+  padding-left: clamp(2.4rem, 5vw, 4rem);
+  padding-right: clamp(2.4rem, 5vw, 4rem);
   height: 100vh;
 
   gap: 4rem;
@@ -35,7 +36,7 @@ header {
   text-align: center;
 
   img {
-    max-width: 32rem;
+    max-width: 70%;
     height: auto;
   }
 }
@@ -115,30 +116,43 @@ footer {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
 /* MEDIA QUERY */
 @media (min-width: 1024px) {
   body {
-    background-image: url(./assets/bg-desktop-v1.jpg);
+    background-image: url(./assets/bg-desktop-v4.png);
   }
 
   .App {
-    padding: 0 20rem;
+    /* padding: 0 24rem; */
+    padding-left: clamp(3.2rem, 16vw, 32rem);
+    padding-right: clamp(3.2rem, 16vw, 32rem);
+    gap: 2rem;
+  }
+
+  header img {
+    max-width: 40rem;
   }
 
   main {
-    font-size: 2.8rem;
-    line-height: 3.6rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    font-weight: 500;
 
-    input, button {
+    input,
+    button {
       font-size: 1.8rem;
     }
 
     label {
       font-size: 2rem;
     }
+  }
+
+  footer {
+    font-size: 1.2rem;
   }
 }
