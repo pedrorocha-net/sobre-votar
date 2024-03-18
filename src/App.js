@@ -34,7 +34,7 @@ function App() {
         <main>
           <p>
             Descubra todas as informações sobre as eleições de
-            Portugal em 2024, com a nossa Inteligência Artificial.
+            Portugal de 2024, com a nossa Inteligência Artificial.
           </p>
 
           <div className="input-search">
