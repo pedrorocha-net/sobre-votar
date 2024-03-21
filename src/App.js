@@ -1,4 +1,6 @@
 import { useState } from "react";
+import axios from "axios";
+
 import logo from "./assets/sobre-votarai-logo.png";
 import openai1 from "./assets/openai-1.jpg";
 import openai2 from "./assets/openai-2.jpg";
@@ -7,11 +9,29 @@ import gemini from "./assets/gemini.jpg";
 import flowiseai from "./assets/flowiseai.jpg";
 
 function App() {
-  const [userInput, setUserInput] = useState(""); // Estado p/ armazenar o valor do input
+  const [inputValue, setInputValue] = useState("");
   const [responseData, setResponseData] = useState(null); // Estado p/ armazenar os dados da resposta da API
 
   const handleInputChange = (event) => {
-    setUserInput(event.target.value); // Atualiza o estado com o valor inserido no input
+    setInputValue(event.target.value); // Atualiza o estado com o valor inserido no input
+  };
+
+  const handleSubmit = async () => {
+    try {
+      // Faz a requisição para a API no Heroku
+      const response = await axios.post(
+        "https://sobre-votar-ae440a1b15ba.herokuapp.com/",
+        {
+          userInput: inputValue,
+        }
+      );
+
+      // Atualiza o estado com RES da API
+      setResponseData(response.data);
+    } catch (error) {
+      // Trata os erros, se houver
+      console.error("Erro ao fazer requisição:", error);
+    }
   };
 
   return (
@@ -33,19 +53,13 @@ function App() {
               id="user-question"
               type="text"
               placeholder="Digite sua pergunta..."
-              value={userInput}
+              value={inputValue}
               onChange={handleInputChange} // Add evento de escuta para capturar a mudança no input
             />
-            <button>Perguntar</button>
+            <button onClick={handleSubmit}>Perguntar</button>
           </div>
 
-          {/* Renderize os dados da RES da API */}
-          {responseData && (
-            <div className="api-response">
-              <h2>Resposta da API:</h2>
-              <pre>{JSON.stringify(responseData, null, 2)}</pre>
-            </div>
-          )}
+          <div>Resposta da API: {responseData}</div>
 
           <div className="ai-logos">
             <img src={openai1} alt="" />
