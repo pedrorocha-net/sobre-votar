@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "./assets/sobre-votarai-logo.png";
 import openai1 from "./assets/openai-1.jpg";
 import openai2 from "./assets/openai-2.jpg";
@@ -12,16 +12,6 @@ function App() {
 
   const handleInputChange = (event) => {
     setUserInput(event.target.value); // Atualiza o estado com o valor inserido no input
-  };
-
-  const handleSubmit = async () => {
-    try {
-      // Envia REQ c/ os dados do input para a API e aguarda a RES
-      const response = await query({ prompt: userInput });
-      console.log(response); // Exibe a RES no console
-    } catch (error) {
-      console.error("Erro ao enviar requisição:", error);
-    }
   };
 
   return (
