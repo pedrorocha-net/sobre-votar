@@ -36,7 +36,7 @@ function App() {
               value={userInput}
               onChange={handleInputChange} // Add evento de escuta para capturar a mudança no input
             />
-            <button onClick={handleSubmit}>Perguntar</button>
+            <button>Perguntar</button>
           </div>
 
           {/* Renderize os dados da RES da API */}
